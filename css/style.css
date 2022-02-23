@@ -771,12 +771,12 @@ body.popup-show::after {
 }
 @media (min-width: 74.375em) {
   .main__block {
-    padding-bottom: 0.1875rem;
+    padding-bottom: 20rem;
   }
 }
 @media (min-width: 20em) and (max-width: 74.375em) {
   .main__block {
-    padding-bottom: clamp( 11.5625rem , 15.746408046rem  +  -20.9195402299vw , 0.1875rem );
+    padding-bottom: clamp( 11.5625rem , 8.4590517241rem  +  15.5172413793vw , 20rem );
   }
 }
 @media (max-width: 20em) {

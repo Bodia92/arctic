@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20220110155207">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220223145419">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,16 +23,16 @@
 						<button type="button" class="menu__icon icon-menu"><span></span></button>
 						<nav class="menu__body">
 							<ul class="menu__list">
-								<li class="menu__item"><a href="" class="menu__link">Преимущества </a></li>
+								<li data-goto="#benefits" class="menu__item"><a href="" class="menu__link">Преимущества </a></li>
 							</ul>
 							<ul class="menu__list">
-								<li class="menu__item"><a href="" class="menu__link">Направления</a></li>
+								<li data-goto="#journey" class="menu__item"><a href="" class="menu__link">Направления</a></li>
 							</ul>
 							<ul class="menu__list">
-								<li class="menu__item"><a href="" class="menu__link">Ближайшие круизы</a></li>
+								<li data-goto="#card" class="menu__item"><a href="" class="menu__link">Ближайшие круизы</a></li>
 							</ul>
 							<ul class="menu__list">
-								<li class="menu__item"><a href="" class="menu__link">Контакты</a></li>
+								<li data-goto="#reservation" class="menu__item"><a href="" class="menu__link">Контакты</a></li>
 							</ul>
 						</nav>
 					</div>
@@ -48,18 +48,18 @@
 					</div>
 				</div>
 			</section>
-			<section class="journey">
+			<section id="journey" class="journey">
 				<div class="journey__container">
-					<div class="journey__block">
+					<div data-prlx-mouse-wrapper class="journey__block">
 						<div class="journey__body">
 							<h3 class="journey__title title">Путешествие на край Земли</h3>
 							<div class="journey__text">Это волшебное путешествие поможет вам познакомиться поближе с удивительным миром Антарктики. Наш круизный лайнер отвезет вас на край Земли, где вы сможете увидеть: ледяные айсберги, несколько видов пингвинов, китов, морских котиков и многое другое.</div>
 						</div>
-						<div class="journey__image-ibg"><picture><source srcset="img/block1.webp"type="image/webp"><img src="img/block1.jpg" alt=""></picture></div>
+						<div class="journey__image-ibg"><picture><source srcset="img/block1.webp"type="image/webp"><img data-prlx-mouse src="img/block1.jpg" alt=""></picture></div>
 					</div>
 				</div>
 			</section>
-			<section class="benefits">
+			<section id="benefits" class="benefits">
 				<div class="benefits__container">
 					<div class="benefits__body">
 						<div class="benefits__title title">Преимущества</div>
@@ -84,7 +84,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="card">
+			<section id="card" class="card">
 				<div class="card__container">
 					<div class="card__block">
 						<div class="card__title title">Ближайшие круизы</div>
@@ -114,7 +114,7 @@
 												<div class="info-item__p">от 11500 $</div>
 											</div>
 										</div>
-										<a class="info-item__btn" href="#">Забронировать</a>
+										<a data-popup="#popup" class="info-item__btn" href="#">Забронировать</a>
 									</div>
 								</div>
 							</div>
@@ -143,7 +143,7 @@
 												<div class="info-item__p">от 14500 $</div>
 											</div>
 										</div>
-										<a class="info-item__btn" href="#">Забронировать</a>
+										<a data-popup="#popup" class="info-item__btn" href="#">Забронировать</a>
 									</div>
 								</div>
 							</div>
@@ -172,7 +172,7 @@
 												<div class="info-item__p">14500 $</div>
 											</div>
 										</div>
-										<a class="info-item__btn" href="#">Забронировать</a>
+										<a data-popup="#popup" class="info-item__btn" href="#">Забронировать</a>
 									</div>
 								</div>
 							</div>
@@ -201,7 +201,7 @@
 												<div class="info-item__p">от 9700 $</div>
 											</div>
 										</div>
-										<a class="info-item__btn" href="#">Забронировать</a>
+										<a data-popup="#popup" class="info-item__btn" href="#">Забронировать</a>
 									</div>
 								</div>
 							</div>
@@ -230,7 +230,7 @@
 												<div class="info-item__p">от 18600 $</div>
 											</div>
 										</div>
-										<a class="info-item__btn" href="#">Забронировать</a>
+										<a data-popup="#popup" class="info-item__btn" href="#">Забронировать</a>
 									</div>
 								</div>
 							</div>
@@ -259,7 +259,7 @@
 												<div class="info-item__p">от 11700 $</div>
 											</div>
 										</div>
-										<a class="info-item__btn" href="#">Забронировать</a>
+										<a data-popup="#popup" class="info-item__btn" href="#">Забронировать</a>
 									</div>
 								</div>
 							</div>
@@ -288,7 +288,7 @@
 												<div class="info-item__p">от 12500 $</div>
 											</div>
 										</div>
-										<a class="info-item__btn" href="#">Забронировать</a>
+										<a data-popup="#popup" class="info-item__btn" href="#">Забронировать</a>
 									</div>
 								</div>
 							</div>
@@ -317,7 +317,7 @@
 												<div class="info-item__p">от 12300 $</div>
 											</div>
 										</div>
-										<a class="info-item__btn" href="#">Забронировать</a>
+										<a data-popup="#popup" class="info-item__btn" href="#">Забронировать</a>
 									</div>
 								</div>
 							</div>
@@ -325,7 +325,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="reservation">
+			<section id="reservation" class="reservation">
 				<div class="reservation__container">
 					<div class="reservation__block">
 						<div class="reservation__body">
@@ -362,10 +362,10 @@
 					<div class="footer__list list-footer">
 						<nav class="list-footer__body">
 							<ul class="list-footer__list">
-								<li class="list-footer__item"><a href="" class="list-footer__link">Преимущества </a></li>
-								<li class="list-footer__item"><a href="" class="list-footer__link">Направления</a></li>
-								<li class="list-footer__item"><a href="" class="list-footer__link">Ближайшие круизы</a></li>
-								<li class="list-footer__item"><a href="" class="list-footer__link">Контакты</a></li>
+								<li data-goto="#benefits" class="list-footer__item"><a href="" class="list-footer__link">Преимущества </a></li>
+								<li data-goto="#journey" class="list-footer__item"><a href="" class="list-footer__link">Направления</a></li>
+								<li data-goto="#card" class="list-footer__item"><a href="" class="list-footer__link">Ближайшие круизы</a></li>
+								<li data-goto="#reservation" class="list-footer__item"><a href="" class="list-footer__link">Контакты</a></li>
 							</ul>
 						</nav>
 					</div>
@@ -378,19 +378,38 @@
 			</div>
 		</footer>
 	</div>
-	<!-- 
-<div id="popup" aria-hidden="true" class="popup">
-	<div class="popup__wrapper">
-		<div class="popup__content">
-			<button data-close type="button" class="popup__close">Закрыть</button>
-			<div class="popup__text">
+
+	<div id="popup" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close">Закрыть</button>
+				<div class="popup__text">
+					<form class="reservation__form form" action="#">
+						<div class="form__title">Оставьте заявку и мы свяжемся с вами в ближайшее время</div>
+						<div class="form__body">
+							<div class="form__item">
+								<input required autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Имя" class="form__input">
+							</div>
+							<div class="form__item">
+								<input required autocomplete="off" type="tel" name="form[]" data-error="Ошибка" placeholder="Номер телефона*" class="form__input">
+							</div>
+							<div class="form__item">
+								<input required autocomplete="off" type="email" name="form[]" data-error="Ошибка" placeholder="E-mail" class="form__input">
+							</div>
+							<div class="form__checkbox checkbox">
+								<input id="c_1" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+								<label for="c_1" class="checkbox__label _icon-check"><span class="checkbox__text ">Я согласен на обработку моих персональных данных</span></label>
+							</div>
+						</div>
+						<button class="form__btn">Оставить заявку</button>
+					</form>
+				</div>
 			</div>
 		</div>
 	</div>
-</div>
- -->
 
-	<script src="js/app.min.js?_v=20220110155207"></script>
+
+	<script src="js/app.min.js?_v=20220223145419"></script>
 </body>
 
 </html>
